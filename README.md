@@ -1,22 +1,21 @@
-# Sonatino PCB Design Files
+# Sonatino "Bluetooth Audio Edition" PCB Design Files
 
-Sonatino is a powerful ESP32-S3-based audio development board that combines high-quality audio processing capabilities with wireless connectivity and extensive I/O options.
+This is an unreleased variant of the [Sonatino](https://github.com/luminationlabs/Sonatino) board that adds support for Bluetooth audio by using the ESP32 microcontroller in place of ESP32-S3.
 
 ## Features
 
-- ESP32-S3-WROOM-1U MCU with 16MB flash and 8MB PSRAM
+- ESP32-WROOM-32UE MCU with 16MB flash
 - High-quality 24-bit/192kHz DAC (WM8524, stereo) and ADC (WM8782, mono)
 - 3.2W speaker amplifier (MAX98357A)
 - TRRS audio jack supporting input and output
 - Stereo headphone amplifier and microphone preamp
 - microSD card slot
-- WiFi and Bluetooth 5.0 LE connectivity
+- WiFi and Bluetooth v4.2 BR/EDR and BLE
+- Bluetooth audio (A2DP) support
 - USB-C for programming and power
 - Battery support with charging circuit
 - Configurable audio I/O levels
 - Compact form factor
-
-![Sonatino PCB](sonatino-pcb.jpg)
 
 ## Component Availability
 
@@ -34,7 +33,7 @@ The ADC that Sonatino uses (Cirrus Logic WM8782) has been discontinued by its ma
 
 - Unreleased board
 - Based on ESP32-WROOM-32UE
-- Uses Bluetooth v4.2 BR/EDR and BLE **with** support for Bluetooth audio (A2DP)
+- Uses Bluetooth v4.2 BR/EDR **with** support for Bluetooth audio (A2DP)
 - Has fewer exposed GPIO pins (10 vs 13)
 - Requires configuration using shift register on GPIO 17, 18, and 19
 
@@ -48,7 +47,9 @@ The documentation for Sonatino is copyrighted by Lumination Labs, Inc. and provi
 
 ## Documentation
 
-For detailed documentation, examples, and a getting started guide, visit:
+Documentation and examples for the standard Sonatino board (not this variant) can be found here:
 
 - [Documentation](https://sonatino.com/docs/)
 - [Example Projects](https://github.com/luminationlabs/Sonatino-Examples)
+
+Pin configurations will need to be modified for use with the "Bluetooth Audio Edition" according to those found in the schematic. Audio configuration requires the use of a shift register on GPIO 17, 18, and 19 (SER, SRCLK, and RCLK).
