@@ -16,7 +16,7 @@ Sonatino is a powerful ESP32-S3-based audio development board that combines high
 - Configurable audio I/O levels
 - Compact form factor
 
-![Sonatino PCB](sonatino-pcb.jpg)
+![Sonatino PCB](assets/sonatino-pcb.jpg)
 
 ## Component Availability
 
@@ -39,6 +39,11 @@ The ADC that Sonatino uses (Cirrus Logic WM8782) has been discontinued by its ma
 - Requires configuration using shift register on GPIO 17, 18, and 19
 
 ## License and Trademark Notice
+
+![OSHW Logo](assets/oshw-logo-100-px.png)
+![Certification Mark](assets/certification-mark-US002724-stacked.png)
+
+Certified open source hardware ([oshwa.org/cert](https://oshwa.org/cert)) - [OSHW] US002724
 
 The design files for this PCB are open-source hardware under [CERN OHL-P v2.0](https://ohwr.org/cern_ohl_p_v2.txt).
 
