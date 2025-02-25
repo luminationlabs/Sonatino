@@ -39,6 +39,11 @@ The ADC that Sonatino uses (Cirrus Logic WM8782) has been discontinued by its ma
 
 ## License and Trademark Notice
 
+![OSHW Logo](assets/oshw-logo-100-px.png)
+![Certification Mark](assets/certification-mark-US002724-stacked.png)
+
+Certified open source hardware ([oshwa.org/cert](https://oshwa.org/cert)) - [OSHW] US002724
+
 The design files for this PCB are open-source hardware under [CERN OHL-P v2.0](https://ohwr.org/cern_ohl_p_v2.txt).
 
 The name "Sonatino" and the associated logo are trademarks of Lumination Labs, Inc. Other manufacturers may use the hardware design but may not use the "Sonatino" branding without permission.
